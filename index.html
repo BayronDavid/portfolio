@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Ver demoport" content="width=device-width, initial-scale=1">
   <title>My portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Bootstrap core CSS -->
@@ -36,7 +36,7 @@
         <a href="#" class="navbar-brand d-flex align-items-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
             stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2"
-            viewBox="0 0 24 24">
+            Ver demoBox="0 0 24 24">
             <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
             <circle cx="12" cy="13" r="4" />
           </svg>
@@ -51,37 +51,50 @@
   </header>
 
   <main>
-
+<!-- Description -->
     <section class="py-5 text-center container">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light">My portfolio</h1>
-          <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, accusantium vitae quos eius temporibus tempora veritatis, consequuntur, ex eveniet commodi quas? Cupiditate a atque maxime ducimus officia pariatur aspernatur laborum!</p>
+          <h1 class="text-start">Bayron David Morales
+          </h1>
+          <h4 class="fw-light text-start">
+            Ingeniero en multimedia
+            <br>
+            JR Unity Developer
+          </h4>
+          
+          <p class="lead text-muted mt-4">Estudiante de noveno semestre de ingeniería en multimedia,
+          con formación en ciencia de datos, desarrollo web y de
+          videojuegos, apasionado por la creación de aplicaciones
+          interactivas y con experiencia en automatizacion de pruebas.</p>
           <p>
-            <a href="#" class="btn btn-primary my-2">Web development</a>
-            <a href="#" class="btn btn-secondary my-2">Gamer Development</a>
-            <a href="#" class="btn btn-primary my-2">Big Data</a>
+            <a href="#webDevelpment" class="btn btn-primary my-2">Desarrollo web</a>
+            <a href="#" class="btn btn-secondary my-2">Desarrollo de videjuegos</a>
+            <!-- <a href="#" class="btn btn-primary my-2">Big Data</a> -->
           </p>
         </div>
       </div>
     </section>
 
     <div class="album py-5 bg-light">
-      <div class="container">
+      <!-- Web  -->
+      <div class="container" id="webDevelpment">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           <!-- Contrast -->
           <div class="col">
             <div class="card shadow-sm">
               <img src="./media/gifs/demo-contraste.gif" alt="">
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">Aplicación web que permite aplicar filtros a una imagen y ver en tiempo real su histograma. 
+                  Cuenta con 17 filtros aplicables, incluyendo convoluciones, lineales y no lineales y de ajuste de
+                  contraste.
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a href="https://procesamiento-de-imagenes.github.io/P1--Cambios-de-contraste-/" target="_blank" class="btn btn-sm btn-outline-secondary">View</a>
+                    <a href="https://procesamiento-de-imagenes.github.io/P1--Cambios-de-contraste-/" target="_blank" class="btn btn-sm btn-outline-secondary">Ver demo</a>
                     <a href="https://github.com/Procesamiento-de-imagenes/P1--Cambios-de-contraste-" target="_blank" class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-github"></i></a>
                   </div>
-                  <small class="text-muted">9 mins</small>
+                  <small class="text-muted">Junio 2022</small>
                 </div>
               </div>
             </div>
@@ -91,14 +104,16 @@
             <div class="card shadow-sm">
               <img src="./media/gifs/demo-EDO.gif" alt="">
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">Aplicacíon web que permite visualizar y comparar en tiempo real el comportamiento de 2 curvas
+                correspondientes a las soluciones exacta y aproximacion por 3 metodos numericos; Euler, Runge kutta y Euler mejorado, de
+                ecuaciones diferenciales ordinarias.
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a href="https://bayrondavid.github.io/simulacion/index.html" target="_blank" class="btn btn-sm btn-outline-secondary">View</a>
+                    <a href="https://bayrondavid.github.io/simulacion/index.html" target="_blank" class="btn btn-sm btn-outline-secondary">Ver demo</a>
                     <a href="https://github.com/BayronDavid/simulacion" target="_blank" class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-github"></i></a>
                   </div>
-                  <small class="text-muted">9 mins</small>
+                  <small class="text-muted">Junio 2022</small>
                 </div>
               </div>
             </div>
@@ -106,39 +121,112 @@
           <!-- Login - Register -->
           <div class="col">
             <div class="card shadow-sm">
-              <img src="./media/gifs/demo-login-django.gif" alt="">
+              <img src="./media/gifs/demo-contraste-color.gif" alt="">
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">Aplicación web que permite entrenar un modelo de machine learning que cambia el color de un texto de manera automática generando un contraste con su fondo, el usuario podrá generar y visualizar los datos con los que entrenara el modelo.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a href="https://app-wheels.herokuapp.com/users/login" target="_blank" class="btn btn-sm btn-outline-secondary">View</a>
-                    <a href="https://github.com/Grupo6-P53-MinTIC" target="_blank" class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://bayrondavid.github.io/Inteligencia-artificial-3corte/" target="_blank" class="btn btn-sm btn-outline-secondary">Ver demo</a>
+                    <a href="https://github.com/BayronDavid/Inteligencia-artificial-3corte.git" target="_blank" class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-github"></i></a>
                   </div>
-                  <small class="text-muted">9 mins</small>
+                  <small class="text-muted">Nov 2022</small>
                 </div>
               </div>
             </div>
           </div>
-
+<!-- Ranas -->
           <div class="col">
             <div class="card shadow-sm">
-              <img src="./media/gifs/demo-contraste.gif" alt="">
+              <img src="./media/gifs/demo-ranas.gif" alt="">
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">Aplicacion web que implementa algoritmos de busqueda para resolver el conocido juego de ranas.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a href="https://procesamiento-de-imagenes.github.io/P1--Cambios-de-contraste-/" target="_blank" class="btn btn-sm btn-outline-secondary">View</a>
-                    <a href="https://github.com/Procesamiento-de-imagenes/P1--Cambios-de-contraste-" target="_blank" class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://bayrondavid.github.io/Juego-de-ranas-IA/" target="_blank" class="btn btn-sm btn-outline-secondary">Ver demo</a>
+                    <a href="https://github.com/BayronDavid/Juego-de-ranas-IA.git" target="_blank" class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-github"></i></a>
                   </div>
-                  <small class="text-muted">9 mins</small>
+                  <small class="text-muted">Oct 2022</small>
+                </div>
+              </div>
+            </div>
+          </div>
+<!-- Car suspension -->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./media/gifs/demo-car-suspension.gif" alt="">
+              <div class="card-body">
+                <p class="card-text">Aplicacion web que mediante una libreria de WebGl simula el comportamiento de una suspension de carro en un terreno
+                irregular.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://bayrondavid.github.io/Car-Suspension---Simulacion-Project/" target="_blank" class="btn btn-sm btn-outline-secondary">Ver demo</a>
+                    <a href="https://github.com/BayronDavid/Car-Suspension---Simulacion-Project.git" target="_blank" class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                  <small class="text-muted">Junio 2022</small>
+                </div>
+              </div>
+            </div>
+          </div>
+<!-- Balls -->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./media/gifs/demo-balls.gif" alt="">
+              <div class="card-body">
+                <p class="card-text">Aplicación web que, mediante WebGl y uso de métodos numéricos para la resolución de ecuaciones diferenciales, simulan la
+                colisión de partículas con superficies.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://simulacion.github.io/Practica-ejercicios-de-Sistema-de-particulas/" target="_blank" class="btn btn-sm btn-outline-secondary">Ver demo</a>
+                    <a href="https://github.com/Simulacion/Practica-ejercicios-de-Sistema-de-particulas.git" target="_blank" class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                  <small class="text-muted">Junio 2022</small>
                 </div>
               </div>
             </div>
           </div>
 
         </div>
+
+        <div class="card mb-3 mt-4" >
+          <div class="row g-0">
+            <div class="col-md-4 embed-responsive embed-responsive-16by9">
+                <iframe class="w-100 h-100 img-fluid rounded-start embed-responsive-item" src="https://www.youtube.com/embed/mC-7Bec2ccw" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Wheels</h5>
+                <p class="card-text">
+                  Wheels es un aplicativo web que tiene como finalidad facilitar a sus usuarios, la búsqueda y
+                  reserva de viajes compartidos a destinos locales o nacionales.
+                  <br>
+                  Realizada con arquitectura de microservicios, es una aplicación robusta que se llevó a cabo con fines académicos para el
+                programa Misión Tic 2022.
+                <br>
+                
+                La aplicación cuenta con un APIGateway en GraphQl y Apollo server, dos microservicios, uno de autenticacion de usuarios
+                en Django (Python) y otro con la lógica del negocio en Spring Boot (Java), el componente de frontend con VueJS y
+                Bootstrap.
+                
+                <br>
+                <small class="text-muted">La aplicación y sus microservicios fueron desplegadas en Heroku mediante contenedores Docker, pero por cambios en las
+                políticas de gratuidad de la plataforma, dichos despliegues ya no están funcionando.</small>
+                
+                  <br>
+
+              </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+
+                      <a href="https://github.com/Grupo6-P53-MinTIC" target="_blank"
+                        class="btn btn-sm btn-outline-secondary"> Repositorio | <i class="fa-brands fa-github"> </i></a>
+                    </div>
+                    <small class="text-muted">Diciembre 2020</small>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -149,9 +237,7 @@
       <p class="float-end mb-1">
         <a href="#">Back to top</a>
       </p>
-      <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-      <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
-          href="../getting-started/introduction/">getting started guide</a>.</p>
+      <p> a</p>
     </div>
   </footer>
 
