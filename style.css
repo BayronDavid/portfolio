@@ -15,8 +15,15 @@
   body{
     overflow-x: hidden;
   }
+
   canvas {
     position: absolute;
     overflow: hidden;
     opacity: 60%;
+    z-index: -1;
   }
+
+  
+
+
+
