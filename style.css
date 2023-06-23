@@ -1,29 +1,42 @@
 .bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
   }
+}
 
-  @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-    }
-  }
+body {
+  overflow-x: hidden;
+}
 
-  body{
-    overflow-x: hidden;
-  }
+canvas {
+  position: absolute;
+  overflow: hidden;
+  opacity: 60%;
+  z-index: -1;
+}
 
-  canvas {
-    position: absolute;
-    overflow: hidden;
-    opacity: 60%;
-    z-index: -1;
-  }
+ #desktop {
+   display: block;
+ }
 
-  
+ #movil {
+   display: none;
+ }
 
+ @media (max-width: 767px) {
+   #desktop {
+     display: none;
+   }
 
-
+   #movil {
+     display: block;
+   }
+ }
