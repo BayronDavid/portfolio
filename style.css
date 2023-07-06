@@ -6,6 +6,14 @@
   user-select: none;
 }
 
+.inicio{
+  height: 100vh;
+  padding: 5px;
+}
+.enlaces{
+  position: absolute;
+}
+
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
@@ -17,10 +25,9 @@ body {
 }
 
 canvas {
-  position: absolute;
+  position: fixed;
   overflow: hidden;
-  opacity: 60%;
-  z-index: -1;
+  opacity: 50%;
 }
 
  #desktop {
@@ -29,6 +36,16 @@ canvas {
 
  #movil {
    display: none;
+ }
+
+ .carousel-item{
+  max-height: 300px;
+ }
+
+ .carousel-item>img{
+  height: 300px;
+  object-fit: contain;
+  max-height: 100%;
  }
 
  @media (max-width: 767px) {
@@ -40,3 +57,63 @@ canvas {
      display: block;
    }
  }
+/* BTN */
+@keyframes color-change-slow {
+  0% {
+    background-color: #007bff;
+  }
+
+  50% {
+    background-color: #2bff00;
+  }
+
+  100% {
+    background-color: #007bff;
+  }
+}
+
+@keyframes color-change-fast {
+  0% {
+    background-color: #007bff;
+  }
+
+  50% {
+    background-color: #ff8c00;
+  }
+
+  100% {
+    background-color: #007bff;
+  }
+}
+
+.btn-animation-slow {
+  animation: color-change-slow 10s infinite;
+}
+
+.btn-animation-fast {
+  animation: color-change-fast 5s infinite;
+}
+
+.custom-btn-blue {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  transition: transform 0.5s ease;
+}
+
+.custom-btn-light-blue {
+  background-color: #17a2b8;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  transition: transform 0.5s ease;
+}
+
+.custom-btn-blue:hover {
+  transform: scale(1.05);
+}
+
+.custom-btn-light-blue:hover {
+  transform: scale(1.05);
+}

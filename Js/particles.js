@@ -35,7 +35,7 @@ var ball = {
         y: 0,
         vx: 0,
         vy: 0,
-        r: 0,
+        r: 10,
         type: 'mouse'
     };
 
@@ -67,7 +67,6 @@ function randomArrayItem(arr) {
 function randomNumFrom(min, max) {
     return Math.random() * (max - min) + min;
 }
-console.log(randomNumFrom(0, 10));
 // Random Ball
 function getRandomBall() {
     var pos = randomArrayItem(['top', 'right', 'bottom', 'left']);
@@ -171,7 +170,11 @@ function renderLines() {
             if (fraction < 1) {
                 alpha = (1 - fraction).toString();
 
-                ctx.strokeStyle = 'rgba(150,150,150,' + alpha + ')';
+                // ctx.strokeStyle = 'rgba(150,150,150,' + alpha + ')';
+
+                ctx.strokeStyle = (balls[i].type === 'mouse' || balls[j].type === 'mouse')
+                    ? 'rgba(150, 150, 255, ' + alpha + ')' // Cambiar el color de las líneas cuando involucran la bola del mouse
+                    : 'rgba(150, 150, 150, ' + alpha + ')';
                 ctx.lineWidth = link_line_width;
 
                 ctx.beginPath();

@@ -23,11 +23,14 @@
 
 <body>
   <main>
-    <section class="text-center container">
+    <canvas id="nokey" width="100%" height="130vh">
+      Your Browser Don't Support Canvas, Please Download Chrome
+    </canvas>
+    <!-- Description -->
+    <section class="text-center container inicio">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="text-start">Bayron David Morales
-          </h1>
+          <h1 class="text-start">Bayron David Morales</h1>
           <h4 class="fw-light text-start">
             Ingeniero en multimedia
             <br>
@@ -39,20 +42,25 @@
             videojuegos, apasionado por la creación de aplicaciones
             interactivas y con experiencia en automatizacion de pruebas.</p>
 
-          <div class="github-card" data-github="BayronDavid" data-width="400" data-height="" data-theme="default"></div>
-          <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-          <br>
-          <a target="_blank" href="https://www.linkedin.com/in/bayron-david/"> www.linkedin.com/in/bayron-david</a>
-          |
-          <a target="_blank"
-            href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=Vengo+de+ver+tu+portafolio+y+tengo+algo+que+decirte&to=bayron.david.morales@gmail.com&body=Hola+Bayron">bayron.david.morales@gmail.com</a>
-          <hr>
-          <p>
-            Mis proyectos
+          <div class="enlaces">
+            <div class="github-card" data-github="BayronDavid" data-width="400" data-height="" data-theme="default"></div>
+            <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
             <br>
-            <a href="#GameDevelpment" class="btn btn-secondary my-2">Desarrollo de videjuegos</a>
-            <a href="#webDevelpment" class="btn btn-primary my-2">Desarrollo web</a>
-          </p>
+            <a target="_blank" href="https://www.linkedin.com/in/bayron-david/"> www.linkedin.com/in/bayron-david</a>
+            |
+            <a target="_blank"
+              href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=Vengo+de+ver+tu+portafolio+y+tengo+algo+que+decirte&to=bayron.david.morales@gmail.com&body=Hola+Bayron">bayron.david.morales@gmail.com</a>
+            <hr>
+            <p>
+              Mis proyectos
+              <br>
+
+            <a href="#GameDevelpment" class="btn btn-secondary  custom-btn-blue btn-animation-fast">Desarrollo de
+              videojuegos</a>
+            <a href="#webDevelpment" class="btn btn-primary  custom-btn-light-blue btn-animation-slow">Desarrollo
+              web</a>
+            </p>
+          </div>
 
         </div>
 
@@ -72,6 +80,14 @@
             <div class="col-md-6 ">
 
               <div id="carouselRelics" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselRelics" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselRelics" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselRelics" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="./media/Games/Relics/museo.gif" class="d-block w-100" alt="...">
@@ -121,16 +137,18 @@
         <!-- Escaping to the future -->
         <div class="card mb-3 mt-4">
           <div class="row g-0">
-            <div class="col-md-6 ">
-              <iframe class="w-100 h-100" id='webgl_iframe' frameborder="0" allow="autoplay; fullscreen; vr"
-                allowfullscreen="" allowvr="" mozallowfullscreen="true"
-                src="https://play.unity.com/webgl/5fcdc584-9c76-4068-a443-3d1bd21716ed?screenshot=false&embedType=embed"
-                onmousewheel="" webkitallowfullscreen="true"></iframe>
-              <!-- <img src="./media/Games/museo_armas.gif" class="img-fluid rounded-start h-100 w-100" alt=""> -->
-            </div>
+
             <div class="col-md-6">
               <div class="card-body text-center">
-                <div id="carouselNoWay" class="carousel slide">
+                <div id="carouselNoWay" class="carousel carousel-dark slide">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselNoWay" data-bs-slide-to="0" class="active"
+                      aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselNoWay" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselNoWay" data-bs-slide-to="2"
+                      aria-label="Slide 3"></button>
+                  </div>
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <img src="./media/Games/No way/1.png" class="d-block w-100" alt="...">
@@ -153,14 +171,22 @@
                     <span class="visually-hidden">Next</span>
                   </button>
                 </div>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://github.com/BayronDavid/G9-Escaping-the-future.git" target="_blank"
-                      class="btn btn-sm btn-outline-secondary">
-                      Repositorio | <i class="fa-brands fa-github"> </i></a>
-                  </div>
-                  <small class="text-muted">Noviembre 2022</small>
+              </div>
+
+            </div>
+            <div class="col-md-6">
+              <iframe
+                src="https://play.unity.com/webgl/5fcdc584-9c76-4068-a443-3d1bd21716ed?screenshot=false&embedType=embed"
+                width="100%" height="250"></iframe>
+              <small class="text-muted text ms-3">by <b> Bayron David, Juan Pablo Sanchez,
+                  Liliana Gomez</b></small>
+              <div class="d-flex justify-content-between align-items-center p-3">
+                <div class="btn-group">
+                  <a href="https://github.com/BayronDavid/G9-Escaping-the-future.git" target="_blank"
+                    class="btn btn-sm btn-outline-secondary">
+                    Repositorio | <i class="fa-brands fa-github"> </i></a>
                 </div>
+                <small class="text-muted">Noviembre 2022</small>
               </div>
             </div>
           </div>
@@ -171,7 +197,15 @@
           <div class="row g-0">
             <div class="col-md-6 ">
 
-              <div id="carouselRunning" class="carousel slide">
+              <div id="carouselRunning" class="carousel carousel-dark slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselRunning" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselRunning" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselRunning" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="./media/Games/Running/qRMpZl.jpg" class="d-block w-100" alt="...">
@@ -221,7 +255,15 @@
           <div class="row g-0">
             <div class="col-md-6 ">
 
-              <div id="carouselViaje" class="carousel slide">
+              <div id="carouselViaje" class="carousel carousel-dark slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselViaje" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselViaje" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselViaje" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="./media/Games/Viaje/7GKL81.png" class="d-block w-100" alt="...">
@@ -269,20 +311,25 @@
         </div>
         <hr>
         <!-- WiridLab-->
-        <div class="text-center">
-          <iframe id="desktop" frameborder="0" src="https://itch.io/embed-upload/8041909?color=ffffff" allowfullscreen=""
-            width="1280" height="740"><a href="https://bayron-david.itch.io/recorrido-virtual">Play Recorrido Virtual on
-              itch.io</a></iframe>
-
-          <iframe id="movil" src="https://itch.io/embed/1971179?link_color=008fbf" width="552" height="167"><a
-              href="https://bayron-david.itch.io/recorrido-virtual">Recorrido Virtual by Bayron David, Karen
-              Rincón</a></iframe>
-          <br>
-          <p class="container">
-            Un proyecto académico en el que se desarrolló un recorrido virtual de un laboratorio, integrando fotografías en
-            360
-            grados y modelos 3D, optimizado para web, tanto en escritorio como en dispositivos móviles.
-          </p>
+        <div class="card mb-3 mt-4">
+          <h2 class="text-center">Demo</h2>
+          <div class="row g-0">
+            <div class="text-center">
+              <iframe id="desktop" frameborder="0" src="https://itch.io/embed-upload/8041909?color=ffffff" allowfullscreen=""
+                width="100%" height="740"><a href="https://bayron-david.itch.io/recorrido-virtual">Play
+                  Recorrido Virtual on
+                  itch.io</a></iframe>
+            
+              <iframe id="movil" src="https://itch.io/embed/1971179?link_color=008fbf" width="100%" height="167"><a
+                  href="https://bayron-david.itch.io/recorrido-virtual">Recorrido Virtual by Bayron David, Karen
+                  Rincón</a></iframe>
+              <br>
+              <p class="container p-2">
+                Un proyecto académico en el que se desarrolló un recorrido virtual de un laboratorio, integrando fotografías
+                en 360 grados y modelos 3D, optimizado para web, tanto en escritorio como en dispositivos móviles.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -295,7 +342,7 @@
       <!-- Web  -->
       <div class="container" id="webDevelpment">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          <!-- Contrast -->
+          <!-- Procesamiento de imagenes -->
           <div class="col">
             <div class="card shadow-sm">
               <img src="./media/gifs/demo-contraste.gif" alt="">
@@ -340,7 +387,7 @@
               </div>
             </div>
           </div>
-          <!-- Login - Register -->
+          <!-- IA Colores-->
           <div class="col">
             <div class="card shadow-sm">
               <img src="./media/gifs/demo-contraste-color.gif" alt="">
@@ -356,25 +403,6 @@
                       class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-github"></i></a>
                   </div>
                   <small class="text-muted">Nov 2022</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Ranas -->
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./media/gifs/demo-ranas.gif" alt="">
-              <div class="card-body">
-                <p class="card-text">Aplicacion web que implementa algoritmos de busqueda para resolver el conocido
-                  juego de ranas.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://bayrondavid.github.io/Juego-de-ranas-IA/" target="_blank"
-                      class="btn btn-sm btn-outline-secondary">Ver demo</a>
-                    <a href="https://github.com/BayronDavid/Juego-de-ranas-IA.git" target="_blank"
-                      class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-github"></i></a>
-                  </div>
-                  <small class="text-muted">Oct 2022</small>
                 </div>
               </div>
             </div>
@@ -419,7 +447,25 @@
               </div>
             </div>
           </div>
-
+          <!-- Ranas -->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./media/gifs/demo-ranas.gif" alt="">
+              <div class="card-body">
+                <p class="card-text">Aplicacion web que implementa algoritmos de busqueda para resolver el conocido
+                  juego de ranas.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://bayrondavid.github.io/Juego-de-ranas-IA/" target="_blank"
+                      class="btn btn-sm btn-outline-secondary">Ver demo</a>
+                    <a href="https://github.com/BayronDavid/Juego-de-ranas-IA.git" target="_blank"
+                      class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                  <small class="text-muted">Oct 2022</small>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="card mb-3 mt-4">
@@ -471,9 +517,6 @@
 
 
     </div>
-    <hr>
-
-
   </main>
 
   <footer class="text-muted py-5">
