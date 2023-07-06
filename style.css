@@ -56,6 +56,10 @@ canvas {
    #movil {
      display: block;
    }
+
+   .inicio{
+    padding: 5px;
+   }
  }
 /* BTN */
 @keyframes color-change-slow {
@@ -116,4 +120,41 @@ canvas {
 
 .custom-btn-light-blue:hover {
   transform: scale(1.05);
+}
+
+
+.floating-button {
+  position: fixed;
+  z-index: 999;
+  animation: floating 1.5s ease-in-out infinite;
+
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  background-color: #64a5eb;
+  border: none;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.floating-button:hover {
+  background-color: #0069d9;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
