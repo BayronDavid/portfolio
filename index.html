@@ -1,543 +1,1051 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bayron David</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bayron David</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Eo_circle_blue_letter-b.svg/2048px-Eo_circle_blue_letter-b.svg.png"
+    />
 
-  <link rel="icon" type="image/x-icon"
-    href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Eo_circle_blue_letter-b.svg/2048px-Eo_circle_blue_letter-b.svg.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap core CSS -->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Bootstrap core CSS -->
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <body>
+    <main>
+      <!-- Boton Flotante -->
+      <a
+        href="./media/CV Bayron Morales.pdf"
+        target="_blank"
+        class="btn btn-primary floating-button"
+        ><b>CV</b> <i class="fa-solid fa-download fa-fade"></i
+      ></a>
+      <!-- Description -->
+      <section class="text-center container inicio">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="text-start">Bayron David Morales</h1>
+            <h4 class="fw-light text-start">
+              Ingeniero en multimedia |Software Developer
+            </h4>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-</head>
-
-<body>
-  <main>
-    <canvas id="nokey" width="100%" height="130vh">
-      Your Browser Don't Support Canvas, Please Download Chrome
-    </canvas>
-
-    <!-- Boton Flotante -->
-    <a href="./media/CV Bayron Morales.pdf" target="_blank" class="btn btn-primary floating-button"><b>CV</b> <i class="fa-solid fa-download fa-fade"></i>   </a>
-    <!-- Description -->
-    <section class="text-center container inicio">
-      <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="text-start">Bayron David Morales</h1>
-          <h4 class="fw-light text-start">
-            Ingeniero en multimedia
-            <br>
-            JR Unity Developer
-          </h4>
-
-          <p class="lead text-muted mt-2">Estudiante de decimo semestre de ingeniería en multimedia,
-            con formación en ciencia de datos, desarrollo web y de
-            videojuegos, apasionado por la creación de aplicaciones
-            interactivas y con experiencia en automatizacion de pruebas.</p>
-
-          <div class="enlaces">
-            <div class="github-card" data-github="BayronDavid" data-width="400" data-height="" data-theme="default"></div>
-            <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-            <br>
-            <a target="_blank" href="https://www.linkedin.com/in/bayron-david/"> www.linkedin.com/in/bayron-david</a>
-            |
-            <a target="_blank"
-              href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=Vengo+de+ver+tu+portafolio+y+tengo+algo+que+decirte&to=bayron.david.morales@gmail.com&body=Hola+Bayron">bayron.david.morales@gmail.com</a>
-            <hr>
-            <p>
-              Mis proyectos
-              <br>
-
-            <a href="#GameDevelpment" class="btn btn-secondary  custom-btn-blue btn-animation-fast">Desarrollo de
-              videojuegos</a>
-            <a href="#webDevelpment" class="btn btn-primary  custom-btn-light-blue btn-animation-slow">Desarrollo
-              web</a>
+            <p class="mt-2 text-justify">
+              Ingeniero en Multimedia con experiencia en todas las fases del
+              ciclo de vida del desarrollo de software, desde la planificación
+              hasta el mantenimiento. Cuento con experiencia en control de
+              calidad y desarrollo de soluciones tecnológicas innovadoras,
+              especialmente en el sector inmobiliario y de videojuegos. Además,
+              tengo formación en big data y automatización de pruebas, lo que me
+              permite abordar proyectos de manera integral y adaptarme a
+              diversas áreas tecnológicas.
             </p>
-          </div>
 
-        </div>
-
-
-      </div>
-    </section>
-
-
-    <div class="album py-5 bg-light">
-      <h1 class="text-center">Desarrollo de videojuegos</h1>
-      <br>
-      <!-- Games  -->
-      <div class="container" id="GameDevelpment">
-        <!-- Relics -->
-        <div class="card mb-3 mt-4">
-          <div class="row g-0">
-            <div class="col-md-6 ">
-
-              <div id="carouselRelics" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselRelics" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselRelics" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselRelics" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./media/Games/Relics/museo.gif" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./media/Games/Relics/museo_armas.gif" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./media/Games/Relics/AtaqueBoss.gif" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselRelics"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next " type="button" data-bs-target="#carouselRelics"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-              <!-- <img src="./media/Games/museo_armas.gif" class="img-fluid rounded-start h-100 w-100" alt=""> -->
-            </div>
-
-            <div class="col-md-6">
-              <div class="card-body text-center">
-                <iframe src="https://itch.io/embed/1818662?border_width=5" width="100%" height="175"><a
-                    href="https://bayron-david.itch.io/beta-relics">
-                  </a></iframe>
-                <small class="text-muted text">by <b> Bayron David, Mauricio Camargo Santos,
-                    Liliana Gomez</b></small>
-                <br>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://github.com/ligomezm/G7FinalProject.git" target="_blank"
-                      class="btn btn-sm btn-outline-secondary">
-                      Repositorio | <i class="fa-brands fa-github"> </i></a>
-                  </div>
-                  <small class="text-muted">Enero 2023</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <!-- Escaping to the future -->
-        <div class="card mb-3 mt-4">
-          <div class="row g-0">
-
-            <div class="col-md-6">
-              <div class="card-body text-center">
-                <div id="carouselNoWay" class="carousel carousel-dark slide">
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselNoWay" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselNoWay" data-bs-slide-to="1"
-                      aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselNoWay" data-bs-slide-to="2"
-                      aria-label="Slide 3"></button>
-                  </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="./media/Games/No way/1.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="./media/Games/No way/2.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="./media/Games/No way/3.png" class="d-block w-100" alt="...">
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselNoWay"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next text-dark" type="button" data-bs-target="#carouselNoWay"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-              </div>
-
-            </div>
-            <div class="col-md-6">
-              <iframe
-                src="https://play.unity.com/webgl/5fcdc584-9c76-4068-a443-3d1bd21716ed?screenshot=false&embedType=embed"
-                width="100%" height="250"></iframe>
-              <small class="text-muted text ms-3">by <b> Bayron David, Juan Pablo Sanchez,
-                  Liliana Gomez</b></small>
-              <div class="d-flex justify-content-between align-items-center p-3">
-                <div class="btn-group">
-                  <a href="https://github.com/BayronDavid/G9-Escaping-the-future.git" target="_blank"
-                    class="btn btn-sm btn-outline-secondary">
-                    Repositorio | <i class="fa-brands fa-github"> </i></a>
-                </div>
-                <small class="text-muted">Noviembre 2022</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <!-- Runnig -->
-        <div class="card mb-3 mt-4">
-          <div class="row g-0">
-            <div class="col-md-6 ">
-
-              <div id="carouselRunning" class="carousel carousel-dark slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselRunning" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselRunning" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselRunning" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./media/Games/Running/qRMpZl.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./media/Games/Running/Imagen2.gif" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./media/Games/Running/Imagen3.gif" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselRunning"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next " type="button" data-bs-target="#carouselRunning"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-              <!-- <img src="./media/Games/museo_armas.gif" class="img-fluid rounded-start h-100 w-100" alt=""> -->
-            </div>
-            <div class="col-md-6">
-              <div class="card-body text-center">
-                <iframe frameborder="0" src="https://itch.io/embed/1792480" width="100%" height="167"><a
-                    href="https://bayron-david.itch.io/demo-survival">Running for your life by Bayron David,
-                    lymancillal</a></iframe>
-                <small class="text-muted text">by <b> Bayron David, Laura Mancilla</b></small>
-                <br>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://github.com/BayronDavidMorales/Survival-Game.git" target="_blank"
-                      class="btn btn-sm btn-outline-secondary">
-                      Repositorio | <i class="fa-brands fa-github"> </i></a>
-                  </div>
-                  <small class="text-muted">Enero 2023</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <!-- Viaje Astral -->
-        <div class="card mb-3 mt-4">
-          <div class="row g-0">
-            <div class="col-md-6 ">
-
-              <div id="carouselViaje" class="carousel carousel-dark slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselViaje" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselViaje" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselViaje" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./media/Games/Viaje/7GKL81.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./media/Games/Viaje/Imagen de WhatsApp 2022-11-14 a las 16.48.07.jpg"
-                      class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./media/Games/Viaje/Imagen de WhatsApp 2022-11-15 a las 22.21.33.jpg"
-                      class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselViaje"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next " type="button" data-bs-target="#carouselViaje"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-              <!-- <img src="./media/Games/museo_armas.gif" class="img-fluid rounded-start h-100 w-100" alt=""> -->
-            </div>
-            <div class="col-md-6">
-              <div class="card-body text-center">
-                <iframe src="https://itch.io/embed/1795428" width="100%" height="100%" frameborder="0"><a
-                    href="https://bayron-david-morales.itch.io/entregable-render-audio-y-video">Entregable Render -
-                    Audio y Video by
-                    Bayron David Morales</a></iframe>
-                <br>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://github.com/BayronDavidMorales/Survival-Game.git" target="_blank"
-                      class="btn btn-sm btn-outline-secondary">
-                      Repositorio | <i class="fa-brands fa-github"> </i></a>
-                  </div>
-                  <small class="text-muted">Enero 2023</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <!-- WiridLab-->
-        <div class="card mb-3 mt-4">
-          <div class="row g-0">
-            <div class="text-center">
-              <iframe id="desktop" frameborder="0" src="https://itch.io/embed-upload/8041909?color=ffffff" allowfullscreen=""
-                width="100%" height="740"><a href="https://bayron-david.itch.io/recorrido-virtual">Play
-                  Recorrido Virtual on
-                  itch.io</a></iframe>
-            
-              <iframe id="movil" src="https://itch.io/embed/1971179?link_color=008fbf" width="100%" height="167"><a
-                  href="https://bayron-david.itch.io/recorrido-virtual">Recorrido Virtual by Bayron David, Karen
-                  Rincón</a></iframe>
-              <br>
-              <p class="container p-2">
-                Un proyecto académico en el que se desarrolló un recorrido virtual de un laboratorio, integrando fotografías
-                en 360 grados y modelos 3D, optimizado para web, tanto en escritorio como en dispositivos móviles.
+            <div class="enlaces">
+              <a
+                href="https://github.com/BayronDavid"
+                target="_blank"
+                style="text-decoration: none; cursor: pointer"
+              >
+                <div
+                  class="github-card"
+                  data-github="BayronDavid"
+                  data-width="400"
+                  data-height=""
+                  data-theme="default"
+                ></div>
+              </a>
+              <script
+                src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"
+                defer
+              ></script>
+              <br />
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/bayron-david/"
+              >
+                www.linkedin.com/in/bayron-david</a
+              >
+              |
+              <a
+                target="_blank"
+                href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=Vengo+de+ver+tu+portafolio+y+tengo+algo+que+decirte&to=bayron.david.morales@gmail.com&body=Hola+Bayron"
+                >bayron.david.morales@gmail.com</a
+              >
+              <hr />
+              <p>
+                Mis proyectos
+                <br />
+                <a
+                  href="#GameDevelpment"
+                  class="btn btn-secondary custom-btn-blue btn-animation-fast"
+                  >Desarrollo de videojuegos</a
+                >
+                <a
+                  href="#webDevelpment"
+                  class="btn btn-primary custom-btn-light-blue btn-animation-slow"
+                  >Desarrollo web</a
+                >
               </p>
             </div>
           </div>
         </div>
+      </section>
+
+      <canvas
+        id="nokey"
+        title="Animación de partículas en el fondo"
+      >
+        Your Browser Don't Support Canvas, Please Download Chrome
+      </canvas>
+      <div class="album py-5 bg-light">
+        <h1 class="text-center">Desarrollo de videojuegos</h1>
+        <br />
+        <!-- Games  -->
+        <div class="container" id="GameDevelpment">
+          <!-- Simulacionm -->
+          <div class="card mb-3 mt-4">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <div
+                  id="carouselRelics"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselRelics"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselRelics"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselRelics"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="./media/Games/C/record.gif"
+                        class="d-block w-100"
+                        alt="Recorrido por el museo virtual en el juego Relics"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselRelics"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselRelics"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card-body text-center">
+                  <div class="markdown" id="markdown-content"></div>
+
+                  <!-- <iframe
+                    src="https://itch.io/embed/1818662?border_width=5"
+                    width="100%"
+                    height="175"
+                    title="Relics Game"
+                    loading="lazy"
+                  ></iframe> -->
+                  <small class="text-muted text">by <b> Bayron David</b></small>
+                  <br />
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://github.com/BayronDavid/simulacion-colisiones-opengl.git"
+                        target="_blank"
+                        class="btn btn-sm btn-outline-secondary"
+                        >Repositorio | <i class="fa-brands fa-github"> </i
+                      ></a>
+                    </div>
+                    <small class="text-muted">Noviembre 2024</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <!-- Relics -->
+          <div class="card mb-3 mt-4">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <div
+                  id="carouselRelics"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselRelics"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselRelics"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselRelics"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="./media/Games/Relics/museo.gif"
+                        class="d-block w-100"
+                        alt="Recorrido por el museo virtual en el juego Relics"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./media/Games/Relics/museo_armas.gif"
+                        class="d-block w-100"
+                        alt="Vista del museo de armas dentro del juego Relics"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./media/Games/Relics/AtaqueBoss.gif"
+                        class="d-block w-100"
+                        alt="Secuencia de ataque del jefe en el juego Relics"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselRelics"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselRelics"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card-body text-center">
+                  <iframe
+                    src="https://itch.io/embed/1818662?border_width=5"
+                    width="100%"
+                    height="175"
+                    title="Relics Game"
+                    loading="lazy"
+                  ></iframe>
+                  <small class="text-muted text"
+                    >by
+                    <b>
+                      Bayron David, Mauricio Camargo Santos, Liliana Gomez</b
+                    ></small
+                  >
+                  <br />
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://github.com/ligomezm/G7FinalProject.git"
+                        target="_blank"
+                        class="btn btn-sm btn-outline-secondary"
+                        >Repositorio | <i class="fa-brands fa-github"> </i
+                      ></a>
+                    </div>
+                    <small class="text-muted">Enero 2023</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <!-- Escaping to the future -->
+          <div class="card mb-3 mt-4">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <div class="card-body text-center">
+                  <div
+                    id="carouselNoWay"
+                    class="carousel carousel-dark slide"
+                    data-bs-ride="carousel"
+                  >
+                    <div class="carousel-indicators">
+                      <button
+                        type="button"
+                        data-bs-target="#carouselNoWay"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#carouselNoWay"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#carouselNoWay"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="./media/Games/No way/1.png"
+                          class="d-block w-100"
+                          alt="Vista del escenario del juego Escaping to the Future"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="./media/Games/No way/2.png"
+                          class="d-block w-100"
+                          alt="Personaje principal explorando un nivel en Escaping to the Future"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="./media/Games/No way/3.png"
+                          class="d-block w-100"
+                          alt="Captura del juego Escaping to the Future con elementos futuristas"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselNoWay"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button
+                      class="carousel-control-next text-dark"
+                      type="button"
+                      data-bs-target="#carouselNoWay"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Siguiente</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <!-- <iframe
+                src="https://play.unity.com/webgl/5fcdc584-9c76-4068-a443-3d1bd21716ed?screenshot=false&embedType=embed"
+                width="100%" height="250" title="Escaping to the Future" loading="lazy"></iframe> -->
+                <small class="text-muted text ms-3"
+                  >by
+                  <b> Bayron David, Juan Pablo Sanchez, Liliana Gomez</b></small
+                >
+                <div
+                  class="d-flex justify-content-between align-items-center p-3"
+                >
+                  <div class="btn-group">
+                    <a
+                      href="https://github.com/BayronDavid/G9-Escaping-the-future.git"
+                      target="_blank"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Repositorio | <i class="fa-brands fa-github"> </i
+                    ></a>
+                  </div>
+                  <small class="text-muted">Noviembre 2022</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <!-- Runnig -->
+          <div class="card mb-3 mt-4">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <div
+                  id="carouselRunning"
+                  class="carousel carousel-dark slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselRunning"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselRunning"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselRunning"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="./media/Games/Running/qRMpZl.jpg"
+                        class="d-block w-100"
+                        alt="Portada del juego Running for your life"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./media/Games/Running/Imagen2.gif"
+                        class="d-block w-100"
+                        alt="Escena de juego con personaje corriendo en Running for your life"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./media/Games/Running/Imagen3.gif"
+                        class="d-block w-100"
+                        alt="Otra escena del juego Running for your life con enemigo cercano"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselRunning"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselRunning"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body text-center">
+                  <iframe
+                    frameborder="0"
+                    src="https://itch.io/embed/1792480"
+                    width="100%"
+                    height="167"
+                    title="Running for your life"
+                    loading="lazy"
+                  ></iframe>
+                  <small class="text-muted text"
+                    >by <b> Bayron David, Laura Mancilla</b></small
+                  >
+                  <br />
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://github.com/BayronDavidMorales/Survival-Game.git"
+                        target="_blank"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Repositorio | <i class="fa-brands fa-github"> </i
+                      ></a>
+                    </div>
+                    <small class="text-muted">Enero 2023</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <!-- Viaje Astral -->
+          <div class="card mb-3 mt-4">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <div
+                  id="carouselViaje"
+                  class="carousel carousel-dark slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselViaje"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselViaje"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselViaje"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="./media/Games/Viaje/7GKL81.png"
+                        class="d-block w-100"
+                        alt="Captura del juego Viaje Astral"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./media/Games/Viaje/Imagen de WhatsApp 2022-11-14 a las 16.48.07.jpg"
+                        class="d-block w-100"
+                        alt="Captura de escena en el juego Viaje Astral"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./media/Games/Viaje/Imagen de WhatsApp 2022-11-15 a las 22.21.33.jpg"
+                        class="d-block w-100"
+                        alt="Otra vista del escenario en Viaje Astral"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselViaje"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselViaje"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body text-center">
+                  <iframe
+                    src="https://itch.io/embed/1795428"
+                    width="100%"
+                    height="100%"
+                    frameborder="0"
+                    title="Viaje Astral"
+                    loading="lazy"
+                  ></iframe>
+                  <br />
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://github.com/BayronDavidMorales/Survival-Game.git"
+                        target="_blank"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Repositorio | <i class="fa-brands fa-github"> </i
+                      ></a>
+                    </div>
+                    <small class="text-muted">Enero 2023</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <!-- WiridLab-->
+          <div class="card mb-3 mt-4">
+            <div class="row g-0">
+              <div class="text-center">
+                <iframe
+                  id="desktop"
+                  frameborder="0"
+                  src="https://itch.io/embed-upload/8041909?color=ffffff"
+                  allowfullscreen=""
+                  width="100%"
+                  height="740"
+                  title="Recorrido Virtual - Escritorio"
+                  loading="lazy"
+                ></iframe>
+                <iframe
+                  id="movil"
+                  src="https://itch.io/embed/1971179?link_color=008fbf"
+                  width="100%"
+                  height="167"
+                  frameborder="0"
+                  title="Recorrido Virtual - Móvil"
+                  loading="lazy"
+                ></iframe>
+                <br />
+                <p class="container p-2">
+                  Un proyecto académico en el que se desarrolló un recorrido
+                  virtual de un laboratorio, integrando fotografías en 360
+                  grados y modelos 3D, optimizado para web, tanto en escritorio
+                  como en dispositivos móviles.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <hr>
-    <div class="album py-5 bg-light">
+      <hr />
+      <div class="album py-5 bg-light">
+        <h1 class="text-center">Desarrollo de Web</h1>
+        <br />
+        <!-- Web  -->
+        <div class="container" id="webDevelpment">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <!-- Procesamiento de imagenes -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="./media/gifs/demo-contraste.gif"
+                  alt="Demostración de aplicación web con filtros de imagen"
+                  class="card-img-top"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Aplicación web que permite aplicar filtros a una imagen y
+                    ver en tiempo real su histograma. Cuenta con 17 filtros
+                    aplicables, incluyendo convoluciones, lineales y no lineales
+                    y de ajuste de contraste.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://procesamiento-de-imagenes.github.io/P1--Cambios-de-contraste-/"
+                        target="_blank"
+                        class="btn btn-sm btn-outline-secondary"
+                        >Ver demo</a
+                      >
+                      <a
+                        href="https://github.com/Procesamiento-de-imagenes/P1--Cambios-de-contraste-"
+                        target="_blank"
+                        class="btn btn-sm btn-outline-secondary"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                    <small class="text-muted">Junio 2022</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- EDO -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="./media/gifs/demo-EDO.gif"
+                  alt="Visualización de curvas de soluciones de EDO en tiempo real"
+                  class="card-img-top"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Aplicación web que permite visualizar y comparar en tiempo
+                    real el comportamiento de 2 curvas correspondientes a las
+                    soluciones exacta y aproximación por 3 métodos numéricos;
+                    Euler, Runge Kutta y Euler mejorado, de ecuaciones
+                    diferenciales ordinarias.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://bayrondavid.github.io/simulacion/index.html"
+                        target="_blank"
+                        class="btn btn-sm btn-outline-secondary"
+                        >Ver demo</a
+                      >
+                      <a
+                        href="https://github.com/BayronDavid/simulacion"
+                        target="_blank"
+                        class="btn btn-sm btn-outline-secondary"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                    <small class="text-muted">Junio 2022</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- IA Colores-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="./media/gifs/demo-contraste-color.gif"
+                  alt="Aplicación IA cambio de color de texto según fondo"
+                  class="card-img-top"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Aplicación web que permite entrenar un modelo de machine
+                    learning que cambia el color de un texto de manera
+                    automática generando un contraste con su fondo. El usuario
+                    puede generar y visualizar los datos con los que entrenará
+                    el modelo.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://bayrondavid.github.io/Inteligencia-artificial-3corte/"
+                        target="_blank"
+                        class="btn btn-sm btn-outline-secondary"
+                        >Ver demo</a
+                      >
+                      <a
+                        href="https://github.com/BayronDavid/Inteligencia-artificial-3corte.git"
+                        target="_blank"
+                        class="btn btn-sm btn-outline-secondary"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                    <small class="text-muted">Nov 2022</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Car suspension -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="./media/gifs/demo-car-suspension.gif"
+                  alt="Simulación web de suspensión de carro con WebGL"
+                  class="card-img-top"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Aplicación web que mediante una librería de WebGl simula el
+                    comportamiento de una suspensión de carro en un terreno
+                    irregular.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://bayrondavid.github.io/Car-Suspension---Simulacion-Project/"
+                        target="_blank"
+                        class="btn btn-sm btn-outline-secondary"
+                        >Ver demo</a
+                      >
+                      <a
+                        href="https://github.com/BayronDavid/Car-Suspension---Simulacion-Project.git"
+                        target="_blank"
+                        class="btn btn-sm btn-outline-secondary"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                    <small class="text-muted">Junio 2022</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Balls -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="./media/gifs/demo-balls.gif"
+                  alt="Simulación de colisión de partículas en WebGL"
+                  class="card-img-top"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Aplicación web que, mediante WebGl y uso de métodos
+                    numéricos para la resolución de ecuaciones diferenciales,
+                    simula la colisión de partículas con superficies.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://simulacion.github.io/Practica-ejercicios-de-Sistema-de-particulas/"
+                        target="_blank"
+                        class="btn btn-sm btn-outline-secondary"
+                        >Ver demo</a
+                      >
+                      <a
+                        href="https://github.com/Simulacion/Practica-ejercicios-de-Sistema-de-particulas.git"
+                        target="_blank"
+                        class="btn btn-sm btn-outline-secondary"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                    <small class="text-muted">Junio 2022</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Ranas -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="./media/gifs/demo-ranas.gif"
+                  alt="Juego de ranas con algoritmos de búsqueda IA"
+                  class="card-img-top"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Aplicación web que implementa algoritmos de búsqueda para
+                    resolver el conocido juego de ranas.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://bayrondavid.github.io/Juego-de-ranas-IA/"
+                        target="_blank"
+                        class="btn btn-sm btn-outline-secondary"
+                        >Ver demo</a
+                      >
+                      <a
+                        href="https://github.com/BayronDavid/Juego-de-ranas-IA.git"
+                        target="_blank"
+                        class="btn btn-sm btn-outline-secondary"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                    <small class="text-muted">Oct 2022</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <h1 class="text-center">Desarrollo de Web</h1>
-      <br>
-      <!-- Web  -->
-      <div class="container" id="webDevelpment">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          <!-- Procesamiento de imagenes -->
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./media/gifs/demo-contraste.gif" alt="">
-              <div class="card-body">
-                <p class="card-text">Aplicación web que permite aplicar filtros a una imagen y ver en tiempo real su
-                  histograma.
-                  Cuenta con 17 filtros aplicables, incluyendo convoluciones, lineales y no lineales y de ajuste de
-                  contraste.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://procesamiento-de-imagenes.github.io/P1--Cambios-de-contraste-/" target="_blank"
-                      class="btn btn-sm btn-outline-secondary">Ver demo</a>
-                    <a href="https://github.com/Procesamiento-de-imagenes/P1--Cambios-de-contraste-" target="_blank"
-                      class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-github"></i></a>
-                  </div>
-                  <small class="text-muted">Junio 2022</small>
-                </div>
+          <div class="card mb-3 mt-4">
+            <div class="row g-0">
+              <div class="col-md-4 embed-responsive embed-responsive-16by9">
+                <iframe
+                  class="w-100 h-100 img-fluid rounded-start embed-responsive-item"
+                  src="https://www.youtube.com/embed/mC-7Bec2ccw"
+                  allowfullscreen
+                  title="Presentación Wheels"
+                  loading="lazy"
+                ></iframe>
               </div>
-            </div>
-          </div>
-          <!-- EDO -->
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./media/gifs/demo-EDO.gif" alt="">
-              <div class="card-body">
-                <p class="card-text">Aplicacíon web que permite visualizar y comparar en tiempo real el comportamiento
-                  de 2 curvas
-                  correspondientes a las soluciones exacta y aproximacion por 3 metodos numericos; Euler, Runge kutta y
-                  Euler mejorado, de
-                  ecuaciones diferenciales ordinarias.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://bayrondavid.github.io/simulacion/index.html" target="_blank"
-                      class="btn btn-sm btn-outline-secondary">Ver demo</a>
-                    <a href="https://github.com/BayronDavid/simulacion" target="_blank"
-                      class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-github"></i></a>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Wheels</h5>
+                  <p class="card-text">
+                    Wheels es un aplicativo web que tiene como finalidad
+                    facilitar a sus usuarios, la búsqueda y reserva de viajes
+                    compartidos a destinos locales o nacionales.
+                    <br />
+                    Realizada con arquitectura de microservicios, es una
+                    aplicación robusta que se llevó a cabo con fines académicos
+                    para el programa Misión Tic 2022.
+                    <br />
+
+                    La aplicación cuenta con un APIGateway en GraphQl y Apollo
+                    server, dos microservicios, uno de autenticación de usuarios
+                    en Django (Python) y otro con la lógica del negocio en
+                    Spring Boot (Java), el componente de frontend con VueJS y
+                    Bootstrap.
+                    <br />
+                    <small class="text-muted"
+                      >La aplicación y sus microservicios fueron desplegadas en
+                      Heroku mediante contenedores Docker, pero por cambios en
+                      las políticas de gratuidad de la plataforma, dichos
+                      despliegues ya no están funcionando.</small
+                    >
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://github.com/Grupo6-P53-MinTIC"
+                        target="_blank"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Repositorio | <i class="fa-brands fa-github"> </i
+                      ></a>
+                    </div>
+                    <small class="text-muted">Diciembre 2020</small>
                   </div>
-                  <small class="text-muted">Junio 2022</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- IA Colores-->
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./media/gifs/demo-contraste-color.gif" alt="">
-              <div class="card-body">
-                <p class="card-text">Aplicación web que permite entrenar un modelo de machine learning que cambia el
-                  color de un texto de manera automática generando un contraste con su fondo, el usuario podrá generar y
-                  visualizar los datos con los que entrenara el modelo.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://bayrondavid.github.io/Inteligencia-artificial-3corte/" target="_blank"
-                      class="btn btn-sm btn-outline-secondary">Ver demo</a>
-                    <a href="https://github.com/BayronDavid/Inteligencia-artificial-3corte.git" target="_blank"
-                      class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-github"></i></a>
-                  </div>
-                  <small class="text-muted">Nov 2022</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Car suspension -->
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./media/gifs/demo-car-suspension.gif" alt="">
-              <div class="card-body">
-                <p class="card-text">Aplicacion web que mediante una libreria de WebGl simula el comportamiento de una
-                  suspension de carro en un terreno
-                  irregular.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://bayrondavid.github.io/Car-Suspension---Simulacion-Project/" target="_blank"
-                      class="btn btn-sm btn-outline-secondary">Ver demo</a>
-                    <a href="https://github.com/BayronDavid/Car-Suspension---Simulacion-Project.git" target="_blank"
-                      class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-github"></i></a>
-                  </div>
-                  <small class="text-muted">Junio 2022</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Balls -->
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./media/gifs/demo-balls.gif" alt="">
-              <div class="card-body">
-                <p class="card-text">Aplicación web que, mediante WebGl y uso de métodos numéricos para la resolución de
-                  ecuaciones diferenciales, simulan la
-                  colisión de partículas con superficies.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://simulacion.github.io/Practica-ejercicios-de-Sistema-de-particulas/" target="_blank"
-                      class="btn btn-sm btn-outline-secondary">Ver demo</a>
-                    <a href="https://github.com/Simulacion/Practica-ejercicios-de-Sistema-de-particulas.git"
-                      target="_blank" class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-github"></i></a>
-                  </div>
-                  <small class="text-muted">Junio 2022</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Ranas -->
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./media/gifs/demo-ranas.gif" alt="">
-              <div class="card-body">
-                <p class="card-text">Aplicacion web que implementa algoritmos de busqueda para resolver el conocido
-                  juego de ranas.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://bayrondavid.github.io/Juego-de-ranas-IA/" target="_blank"
-                      class="btn btn-sm btn-outline-secondary">Ver demo</a>
-                    <a href="https://github.com/BayronDavid/Juego-de-ranas-IA.git" target="_blank"
-                      class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-github"></i></a>
-                  </div>
-                  <small class="text-muted">Oct 2022</small>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="card mb-3 mt-4">
-          <div class="row g-0">
-            <div class="col-md-4 embed-responsive embed-responsive-16by9">
-              <iframe class="w-100 h-100 img-fluid rounded-start embed-responsive-item"
-                src="https://www.youtube.com/embed/mC-7Bec2ccw" allowfullscreen></iframe>
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Wheels</h5>
-                <p class="card-text">
-                  Wheels es un aplicativo web que tiene como finalidad facilitar a sus usuarios, la búsqueda y
-                  reserva de viajes compartidos a destinos locales o nacionales.
-                  <br>
-                  Realizada con arquitectura de microservicios, es una aplicación robusta que se llevó a cabo con fines
-                  académicos para el
-                  programa Misión Tic 2022.
-                  <br>
-
-                  La aplicación cuenta con un APIGateway en GraphQl y Apollo server, dos microservicios, uno de
-                  autenticacion de usuarios
-                  en Django (Python) y otro con la lógica del negocio en Spring Boot (Java), el componente de frontend
-                  con VueJS y
-                  Bootstrap.
-
-                  <br>
-                  <small class="text-muted">La aplicación y sus microservicios fueron desplegadas en Heroku mediante
-                    contenedores Docker, pero por cambios en las
-                    políticas de gratuidad de la plataforma, dichos despliegues ya no están funcionando.</small>
-
-                  <br>
-
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-
-                    <a href="https://github.com/Grupo6-P53-MinTIC" target="_blank"
-                      class="btn btn-sm btn-outline-secondary"> Repositorio | <i class="fa-brands fa-github"> </i></a>
-                  </div>
-                  <small class="text-muted">Diciembre 2020</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
+    </main>
 
+    <footer class="text-muted py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Volver al inicio</a>
+        </p>
+        <p>&copy; 2023 Bayron David Morales, todos los derechos reservados</p>
+      </div>
+    </footer>
 
-    </div>
-  </main>
+    <script>
+      // URL del archivo Markdown en GitHub
+      const markdownUrl =
+        "https://raw.githubusercontent.com/BayronDavid/simulacion-colisiones-opengl/refs/heads/main/README.md";
 
-  <footer class="text-muted py-5">
-    <div class="container">
-      <p class="float-end mb-1">
-        <a href="#">Volver al inicio</a>
-      </p>
-      <p> &copy; 2023 Bayron David Morales, todos los derechos reservados</p>
-    </div>
-  </footer>
+      // Referencia al contenedor donde se mostrará el contenido
+      const markdownContainer = document.getElementById("markdown-content");
 
+      // Función para cargar y renderizar el Markdown
+      fetch(markdownUrl)
+        .then((response) => response.text())
+        .then((markdown) => {
+          // Convertir Markdown a HTML usando Marked.js
+          markdownContainer.innerHTML = marked.parse(markdown);
+        })
+        .catch((error) => {
+          console.error("Error al cargar el archivo Markdown:", error);
+          markdownContainer.innerText = "No se pudo cargar el contenido.";
+        });
+    </script>
 
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-
-
-</body>
-<script src="Js/particles.js"></script>
-
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7K0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- <script src="Js/particles.js" defer></script> -->
+  </body>
 </html>
