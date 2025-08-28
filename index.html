@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portafolio de Bayron David Morales: ingeniero en multimedia y software developer. Proyectos de desarrollo web, simulación, videojuegos y más." />
+  <meta name="author" content="Bayron David Morales" />
+  <meta name="theme-color" content="#0d6efd" />
     <title>Bayron David</title>
 
     <link
@@ -10,6 +13,15 @@
       type="image/x-icon"
       href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Eo_circle_blue_letter-b.svg/2048px-Eo_circle_blue_letter-b.svg.png"
     />
+
+  <!-- Performance hints -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+  <link rel="preconnect" href="https://itch.io" crossorigin />
+  <link rel="preconnect" href="https://www.youtube.com" crossorigin />
+  <link rel="preconnect" href="https://upload.wikimedia.org" crossorigin />
 
     <link
       rel="stylesheet"
@@ -27,8 +39,22 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Bayron David Morales",
+        "jobTitle": "Ingeniero en Multimedia, Software Developer",
+        "email": "mailto:bayron.david.morales@gmail.com",
+        "sameAs": [
+          "https://github.com/BayronDavid",
+          "https://www.linkedin.com/in/bayron-david/"
+        ]
+      }
+    </script>
   </head>
 
   <body>
@@ -38,6 +64,7 @@
         href="./media/CV Bayron Morales.pdf"
         target="_blank"
         class="btn btn-primary floating-button"
+        aria-label="Descargar CV en PDF"
         ><b>CV</b> <i class="fa-solid fa-download fa-fade"></i
       ></a>
       <!-- Description -->
@@ -46,18 +73,11 @@
           <div class="col-lg-6 col-md-8 mx-auto">
             <h1 class="text-start">Bayron David Morales</h1>
             <h4 class="fw-light text-start">
-              Ingeniero en multimedia |Software Developer
+              Ingeniero en Multimedia | Software Developer
             </h4>
 
             <p class="mt-2 text-justify">
-              Ingeniero en Multimedia con experiencia en todas las fases del
-              ciclo de vida del desarrollo de software, desde la planificación
-              hasta el mantenimiento. Cuento con experiencia en control de
-              calidad y desarrollo de soluciones tecnológicas innovadoras,
-              especialmente en el sector inmobiliario y de videojuegos. Además,
-              tengo formación en big data y automatización de pruebas, lo que me
-              permite abordar proyectos de manera integral y adaptarme a
-              diversas áreas tecnológicas.
+              Ingeniero en Multimedia con experiencia transversal en desarrollo de software, liderazgo técnico y visualización interactiva. He participado en todas las fases del ciclo de vida de proyectos digitales, desde la arquitectura y codificación hasta pruebas automatizadas y despliegue. Especializado en interfaces ricas y experiencias inmersivas, combino habilidades en desarrollo web, 3D, control de calidad y rendimiento multiplataforma. Trabajo con autonomía, gestionando equipos y entregables en entornos exigentes, con foco en la optimización, escalabilidad y valor funcional.
             </p>
 
             <div class="enlaces">
@@ -74,10 +94,7 @@
                   data-theme="default"
                 ></div>
               </a>
-              <script
-                src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"
-                defer
-              ></script>
+              <!-- Carga diferida del widget de GitHub: se inyecta sólo cuando es visible -->
               <br />
               <a
                 target="_blank"
@@ -127,30 +144,18 @@
             <div class="row g-0">
               <div class="col-md-6">
                 <div
-                  id="carouselRelics"
+                  id="carouselSimulacion"
                   class="carousel slide"
                   data-bs-ride="carousel"
                 >
                   <div class="carousel-indicators">
                     <button
                       type="button"
-                      data-bs-target="#carouselRelics"
+                      data-bs-target="#carouselSimulacion"
                       data-bs-slide-to="0"
                       class="active"
                       aria-current="true"
                       aria-label="Slide 1"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carouselRelics"
-                      data-bs-slide-to="1"
-                      aria-label="Slide 2"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carouselRelics"
-                      data-bs-slide-to="2"
-                      aria-label="Slide 3"
                     ></button>
                   </div>
                   <div class="carousel-inner">
@@ -158,7 +163,7 @@
                       <img
                         src="./media/Games/C/record.gif"
                         class="d-block w-100"
-                        alt="Recorrido por el museo virtual en el juego Relics"
+                        alt="Simulación de colisiones en OpenGL - animación"
                         loading="lazy"
                       />
                     </div>
@@ -166,7 +171,7 @@
                   <button
                     class="carousel-control-prev"
                     type="button"
-                    data-bs-target="#carouselRelics"
+                    data-bs-target="#carouselSimulacion"
                     data-bs-slide="prev"
                   >
                     <span
@@ -178,7 +183,7 @@
                   <button
                     class="carousel-control-next"
                     type="button"
-                    data-bs-target="#carouselRelics"
+                    data-bs-target="#carouselSimulacion"
                     data-bs-slide="next"
                   >
                     <span
@@ -1019,24 +1024,43 @@
     </footer>
 
     <script>
-      // URL del archivo Markdown en GitHub
-      const markdownUrl =
-        "https://raw.githubusercontent.com/BayronDavid/simulacion-colisiones-opengl/refs/heads/main/README.md";
+      // Mejora seguridad: abrir en nueva pestaña sin acceso a window.opener
+      document.addEventListener('click', (e) => {
+        const a = e.target.closest('a[target="_blank"]');
+        if (a) a.rel = (a.rel ? a.rel + ' ' : '') + 'noopener noreferrer';
+      });
 
-      // Referencia al contenedor donde se mostrará el contenido
-      const markdownContainer = document.getElementById("markdown-content");
-
-      // Función para cargar y renderizar el Markdown
-      fetch(markdownUrl)
-        .then((response) => response.text())
-        .then((markdown) => {
-          // Convertir Markdown a HTML usando Marked.js
-          markdownContainer.innerHTML = marked.parse(markdown);
-        })
-        .catch((error) => {
-          console.error("Error al cargar el archivo Markdown:", error);
-          markdownContainer.innerText = "No se pudo cargar el contenido.";
+      // Lazy load del widget de GitHub cuando la tarjeta sea visible
+      const githubCard = document.querySelector('.github-card');
+      if ('IntersectionObserver' in window && githubCard) {
+        const obs = new IntersectionObserver((entries, observer) => {
+          if (entries.some(en => en.isIntersecting)) {
+            const s = document.createElement('script');
+            s.src = 'https://cdn.jsdelivr.net/github-cards/latest/widget.js';
+            s.defer = true;
+            document.body.appendChild(s);
+            observer.disconnect();
+          }
         });
+        obs.observe(githubCard);
+      }
+
+      // Carga de README de simulación y render con Marked cuando DOM esté listo
+      document.addEventListener('DOMContentLoaded', () => {
+        const markdownUrl =
+          'https://raw.githubusercontent.com/BayronDavid/simulacion-colisiones-opengl/refs/heads/main/README.md';
+        const markdownContainer = document.getElementById('markdown-content');
+        if (!markdownContainer) return;
+        fetch(markdownUrl)
+          .then((response) => response.ok ? response.text() : Promise.reject(response.status))
+          .then((markdown) => {
+            markdownContainer.innerHTML = window.marked ? marked.parse(markdown) : markdown;
+          })
+          .catch((error) => {
+            console.error('Error al cargar el archivo Markdown:', error);
+            markdownContainer.innerText = 'No se pudo cargar el contenido.';
+          });
+      });
     </script>
 
     <!-- JavaScript Bundle with Popper -->
